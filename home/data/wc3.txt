@@ -1,0 +1,1 @@
+I am Anusha Putta. This is the second assignment for cloud computing. Need to deploy the word count program on docker for this assignment.
