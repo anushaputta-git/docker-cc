@@ -25,7 +25,7 @@ public class WordCounter {
 		try {
 			System.out.println("strat---------------------");
 			// Open the folder to list all the files
-			File folder = new File("home/data");
+			File folder = new File("/home/data");
 
 			// Create a text file to write the results
 			File dir = new File("/home/output/");
@@ -41,7 +41,7 @@ public class WordCounter {
 					String name = lf[i].getName();
 
 					// get the word count in the file
-					int wc = getWordCount("home/data/" + name);
+					int wc = getWordCount("/home/data/" + name);
 
 					// check if the file has maximum words
 					if (wc > mc) {
@@ -83,25 +83,6 @@ public class WordCounter {
 
 		}
 		
-		/*try {
-			
-            File f = new File("/home/output/result.txt");
-
-            BufferedReader b = new BufferedReader(new FileReader(f));
-
-            String readLine = "";
-
-            System.out.println("Reading file using Buffered Reader");
-
-            while ((readLine = b.readLine()) != null) {
-                System.out.println(readLine);
-            }
-            
-            b.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
 		
 		System.out.println("end---------------------");
 	}
